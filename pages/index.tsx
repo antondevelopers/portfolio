@@ -1,13 +1,22 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
+import HeroCardHome from "../components/HeroCardHome"
+import Tecnologias from "../components/Tecnologias";
+import ReactSvg from "../components/ReactSvg";
+import Feedback from "../components/Feedback";
+import SobreNos from "../components/SobreNos";
+import Contact from "../components/Contact";
+
+
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1 className="italic">Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
+    <Layout title="Anton Devs | Seu Futuro começa aqui" className="">
+        <HeroCardHome/>
+        <ReactSvg/>
+        <Tecnologias/>
+        <Feedback/>
+        <SobreNos/>
+        <Contact/>
+    </Layout>
 );
 
 export default IndexPage;
