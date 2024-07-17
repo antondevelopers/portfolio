@@ -11,11 +11,11 @@ const Carousel = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 600, // Velocidade de transição em milissegundos
+        speed: 1000, // Velocidade de transição em milissegundos
         slidesToShow: 1, // Quantidade de slides a serem exibidos por vez
         slidesToScroll: 1, // Quantidade de slides a serem percorridos por vez
         autoplay: true, // Auto play habilitado
-        autoplaySpeed: 1500, // Velocidade de auto play em milissegundos
+        autoplaySpeed: 1000, // Velocidade de auto play em milissegundos
         arrows: false,
     };
 
@@ -26,7 +26,7 @@ const Carousel = () => {
     }, []);
 
     return (
-        <div className="h-[108px] pl-32">
+        <div className="h-[110px] pl-24 ">
             <Slider {...settings}>
                 {svgList.map((svg, index) => (
                     <div key={index}>

@@ -13,7 +13,7 @@ type Props = {
     className?: string;
 };
 
-const Layout = ({ children, title = "This is the default title", className }: Props) => (
+const Layout = ({ children, title = "This is the default title", className}: Props) => ( 
     <div className={className}>
         <Head>
             <title>{title}</title>
@@ -24,14 +24,14 @@ const Layout = ({ children, title = "This is the default title", className }: Pr
             />
         </Head>
         <header className="absolute left-0 right-0 overflow-hidden">
-            <nav className="flex justify-center lg:justify-between lg:px-16 h-12 font-poppins items-center py-4 text-antonTextWhite  font-extralight">
-                <div className="hidden lg:flex text-2xl py-4">ANTON DEVS</div>
-                <div className="h-full flex gap-4 lg:gap-12 justify-between lg:justify-end items-center lg:tracking-[6px] lg:font-bold">
+            <nav className="flex justify-center lg:justify-between xl:px-16 lg:px-12 h-12 font-poppins items-center py-4 text-antonTextWhite  font-extralight">
+                <div className="hidden lg:flex text-xl xl:text-2xl py-4">ANTON DEVS</div>
+                <div className="h-full flex gap-4 lg:gap-12 justify-between lg:justify-end items-center lg:tracking-[6px] lg:font-normal [text-shadow:_1px_2px_0_rgb(0_0_0_/_40%)]">
                     <div
                         className=" lg:text-xl cursor-pointer"
                         onClick={() =>
                             document
-                                .getElementById("sobre-nos")
+                                .getElementById("tecnologias")
                                 .scrollIntoView({
                                     behavior: "smooth",
                                     block: "center",
@@ -39,14 +39,14 @@ const Layout = ({ children, title = "This is the default title", className }: Pr
                                 })
                         }
                     >
-                        Sobre Nos
+                        Tecnologias
                     </div>
                     <div className="h-full bg-white w-[1px]  " />
                     <div
                         className=" lg:text-xl cursor-pointer "
                         onClick={() =>
                             document
-                                .getElementById("tecnologias")
+                                .getElementById("sobre-nos")
                                 .scrollIntoView({
                                     behavior: "smooth",
                                     block: "start",
@@ -54,7 +54,7 @@ const Layout = ({ children, title = "This is the default title", className }: Pr
                                 })
                         }
                     >
-                        Tecnologias
+                        Sobre Nos
                     </div>
                     <div className="h-full bg-white w-[1px]  " />
                     <div
@@ -74,7 +74,7 @@ const Layout = ({ children, title = "This is the default title", className }: Pr
         </header>
         {children}
         <footer className="flex flex-col w-full justify-center items-center">
-            <div className="flex justify-center bg-antonSecondary text-antonTextWhite text-xl tracking-widest font-poppins rounded-md w-full py-4 mb-10 ">antondevelopers@gmail.com</div>
+            <div className="flex justify-center bg-antonSecondary text-antonTextWhite text-xl tracking-widest font-poppins w-full py-4 mb-10 ">antondevelopers@gmail.com</div>
             <div className="flex w-full justify-center">
                 <Link href={""}>
                     <Image
@@ -113,7 +113,7 @@ const Layout = ({ children, title = "This is the default title", className }: Pr
                     />
                 </Link>
             </div>
-            <span className="font-poppins text-sm">© 2024 Anton Developers. All rights reserved.</span>
+            <span className="font-poppins text-sm pb-10">© 2024 Anton Developers. All rights reserved.</span>
         </footer>
     </div>
 );
