@@ -27,7 +27,7 @@ module.exports = {
       },
       animation: {
         'bounce-slow': 'bounce 2s cubic-bezier(0.5, 0, 1, 1) infinite',
-        'spin-slow': 'spin 11s linear infinite',
+        'spin-slow': 'spin 40s linear infinite',
       },
     },
   },
